@@ -1,18 +1,18 @@
 import Grid from "./sections/Grid";
+import { useMemo } from "react";
 function App() {
-  const scrollHeight = document.documentElement.scrollHeight;
   return (
-    <div className="App font-body bg-lightGrayishBlue h-screen min-h-screen">
-      <main className="h-full relative">
+    <div className="App font-body bg-lightGrayishBlue min-h-screen relative">
+      <main className="min-h-screen">
         <Grid />
-        <div
-          className={`bg-veryDarkBlackishBlue absolute -bottom-[${scrollHeight}] inset-x-0 text-white text-center`}
-        >
-          <p>
-            &copy; <span>Mohamed Mostafa</span>
-          </p>
-        </div>
       </main>
+      <footer
+        className={`bg-veryDarkBlackishBlue absolute bottom-0 inset-x-0 text-white text-center`}
+      >
+        <p>
+          &copy; <span>Mohamed Mostafa</span>
+        </p>
+      </footer>
     </div>
   );
 }

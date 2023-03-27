@@ -36,8 +36,8 @@ const testimonials = [
 ];
 export default function Grid() {
   return (
-    <div className="bg-lightGrayishBlue py-24">
-      <div className="container grid grid-cols-1 h-full gap-8 mx-auto px-6 md:p-0 md:grid-cols-4 md:grid-rows-2">
+    <div className="bg-lightGrayishBlue py-24 min-h-screen">
+      <div className="container grid grid-cols-1 h-full gap-8 mx-auto px-6 md:p-0 md:grid-cols-4 md:grid-rows-2 min-h-screen">
         <Cards items={testimonials} />
       </div>
     </div>
